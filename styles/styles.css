@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+#contumaz-menu {
+    display: flex;
+    color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    direction: rtl;
+    margin: 3rem 0 0 0;
+}   
+
+#contumaz-menu span {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.71);
+}
+
+#contumaz-menu span a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.71);
+    padding: 2rem;
+}
+
+#contumaz-menu span a:hover {
+    color: rgb(5, 0, 0);
+}
+
+#side-bar aside img {
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+}
+
+#contumaz-header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: 5rem 0 0 0;
+    
+    color: #000000;
+}
+
+#subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 10rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.71);
+}
+
+body, input, button, textarea {
+    font-size: 1.8rem;    
+    font-family: 'Roboto', 'Heebo', sans-serif;
+    line-height: 1;    
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: inherit;
+    padding: 2rem 5rem ;
+}
+
+
+#destaques {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+}
+
+#group-description {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.71);
+}
+
+#grid-destaques {
+    display: flex;
+}
+
+#destaque {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#destaque:hover {
+    cursor: pointer;
+}
+
+#destaque img {
+    width: 35.1rem;
+    height: 25.5rem;  
+}
+
+#destaque h3 {
+    width: 35.1rem;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 45px;
+    text-align: justify;
+    font-feature-settings: 'kern' off;
+
+    color: #000000;
+}
+
+#destaque p {
+    width: 35.1rem;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 35px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+
+
+/* latests */
+
+
+#latests-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+
+#latests-grid {
+    display: flex;   
+    flex-direction: row;
+}
+
+#latests-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#latest {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;   
+    
+}
+
+#latest img {
+    width: 15.1rem;
+    height: 10.5rem;  
+}
+
+#latest-text {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#latest-text h3 {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+    text-align: justify;
+
+    color: #000000;
+}
+
+#latest-text p {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    text-align: justify;
+
+    color: #000000;
+}
+
+
+/* animações */
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-left {
+    animation-name: left;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+}
