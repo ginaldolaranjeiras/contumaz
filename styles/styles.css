@@ -163,6 +163,10 @@ body {
 
 /* latests */
 
+#latest:hover {
+    cursor: pointer;
+}
+
 
 #latests-container {
     width: 80vw;

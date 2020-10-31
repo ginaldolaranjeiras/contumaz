@@ -7,7 +7,7 @@ function Post() {
         <ContumazHead/>
         <body>
           <ContumazAside/>
-          <div id='post-container'>
+          <div id='post-container' className='animate-appear'>
             <h1 id='post-title'>
               Degradação ambiental e exclusão  social
             </h1>
