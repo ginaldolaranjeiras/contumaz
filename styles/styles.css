@@ -8,6 +8,10 @@
     font-size: 62.5%;
 }
 
+.side-bar {
+    position: absolute;
+}
+
 #contumaz-menu {
     display: flex;
     color: rgba(0, 0, 0, 0.71);
@@ -40,7 +44,7 @@
 }
 
 #side-bar aside img {
-    position: absolute;
+    position: fixed;
     left: 5rem;
     top: 5rem;
 }

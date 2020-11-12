@@ -29,11 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/latests": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/latests.js"
-    ],
     "/post": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
